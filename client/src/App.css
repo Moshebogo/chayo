@@ -1,0 +1,39 @@
+#images {
+    display: grid;
+}
+
+#headerImages {
+    margin: auto;
+    border: auto;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color:  white;
+    overflow: hidden;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.image {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.container:hover {
+    opacity: .5;
+}
